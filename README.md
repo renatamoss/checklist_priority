@@ -1,6 +1,6 @@
 ## Projeto Lista de Tarefas 
 
-## Linguagens estudadas: 
+## Tecnologias estudadas: 
 
 
 - [X] HTML5 e CSS3
