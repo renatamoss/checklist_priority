@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    background: #DCD5C2;
+    font-family: 'Spartan', sans-serif;
+}
+
+main {
+    margin: 90px 0;
+    width: 100%;
+}
+
+#navbar {
+    font-size: 1.8rem;
+    color: #5F4045;
+    letter-spacing: 4px;
+    padding: 10px 0;
+}
+
+#navbar h1 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#navbar h4 {
+    text-align: center;
+}
+
+#lines {
+    background-color: #c7bfaf;
+    box-shadow: 5px 5px 5px #4d3438;
+    font-size: 1.3rem;
+    margin: 10px 5px;
+    padding: 20px;
+}
+
+/*lista de tarefas incluídas*/
+.checklist__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checklist__list>label {
+    background-color: #17a2b8;
+}
+
+/*nova tarefa à incluir*/
+.checklist__tarefa {
+    background-color: #c7bfaf;
+    display: flex;
+    line-height: 2rem;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.checklist__tarefa:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all .5s ease;
+}
+
+.checklist__tarefa>div {
+    padding: 0 20px;
+    width: 80%;
+}
+
+.checklist__tarefa>label {
+    margin: 0;
+}
+
+.checklist__tarefa>input[type='text'] {
+    border: none;
+    width: 80%;
+}
+
+.checklist__tarefa>input[type='button'],
+.checklist__tarefa>input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+}
+
+.checklist__tarefa>input[type='checkbox']:checked+div {
+    text-decoration: line-through;
+}
+
+/*caixa para digitar nova tarefa à incluir*/
+.checklist__new-tarefa {
+    display: flex;
+    width: 100%;
+    line-height: 2rem;
+    justify-content: space-evenly;
+}
+
+.checklist__new-tarefa .seta {
+    color: #4d3438;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 2px;
+}
+
+.checklist__new-tarefa>input {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 0 20px;
+    width: 100%;
+    outline: none;
+}
+
+.checklist__new-tarefa>input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #4d3438;
+    font-size: 0.8rem;
+    padding: 5px;
+    text-align: center;
+}
